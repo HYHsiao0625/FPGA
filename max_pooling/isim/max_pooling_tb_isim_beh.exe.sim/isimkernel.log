@@ -1,0 +1,10 @@
+Command line:
+   max_pooling_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51395
+
+Sun Apr 21 21:24:04 2024
+
+
+ Elaboration Time: 0.01 sec
