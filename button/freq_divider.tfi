@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+freq_divider instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .o_clk(o_clk)
+    );
+
+

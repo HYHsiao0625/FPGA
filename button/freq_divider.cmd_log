@@ -1,0 +1,9 @@
+vhdtdtfi -lib work /home/yuan/Desktop/fgpa/button/freq_divider.v -lang verilog -prj button -o freq_divider.spl -module freq_divider -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 freq_divider.spl /home/yuan/Desktop/fgpa/button/freq_divider.sym 
+vhdtdtfi -lang verilog -prj button -o /home/yuan/Desktop/fgpa/button/freq_divider.tfi -lib work /home/yuan/Desktop/fgpa/button//freq_divider.v -module freq_divider -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work /home/yuan/Desktop/fgpa/button/freq_divider.v -lang verilog -prj button -o freq_divider.spl -module freq_divider -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 freq_divider.spl /home/yuan/Desktop/fgpa/button/freq_divider.sym 
+vhdtdtfi -lib work /home/yuan/Desktop/fgpa/button/freq_divider.v -lang verilog -prj button -o freq_divider.spl -module freq_divider -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 freq_divider.spl /home/yuan/Desktop/fgpa/button/freq_divider.sym 
+xst -intstyle ise -ifn "/home/yuan/Desktop/fgpa/button/freq_divider.xst" -ofn "/home/yuan/Desktop/fgpa/button/freq_divider.syr" 
+vhdtdtfi -lang verilog -prj button -o /home/yuan/Desktop/fgpa/button/freq_divider.tfi -lib work /home/yuan/Desktop/fgpa/button//freq_divider.v -module freq_divider -template /opt/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
