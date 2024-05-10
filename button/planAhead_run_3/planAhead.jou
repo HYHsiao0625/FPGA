@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon May  6 11:23:59 2024
+# Process ID: 2460
+# Log file: /home/yuan/Desktop/FPGA/button/planAhead_run_3/planAhead.log
+# Journal file: /home/yuan/Desktop/FPGA/button/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/yuan/Desktop/FPGA/button/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

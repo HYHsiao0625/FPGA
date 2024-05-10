@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-05-06T09:22:48</DateModified>
+  <DateModified>2024-05-11T00:19:27</DateModified>
   <ModuleName>button</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/yuan/Desktop/fgpa/button/iseconfig/button.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/yuan/Desktop/fgpa/button/</ImplementationReportsDirectory>
+  <SavedFilePath>/home/yuan/Desktop/FPGA/button/iseconfig/button.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/yuan/Desktop/FPGA/button/</ImplementationReportsDirectory>
   <DateInitialized>2024-05-06T09:18:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/yuan/Desktop/FPGA/button/impact.xsl
+OUTFILE=/home/yuan/Desktop/FPGA/button/impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=/home/yuan/Desktop/FPGA/button
+LICENSE=iMPACT
+USER_INFO=iMPACT

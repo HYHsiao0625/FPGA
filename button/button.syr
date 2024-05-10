@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
  
 --> 
 Reading design: button.prj
@@ -49,7 +49,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "button"
 Output Format                      : NGC
-Target Device                      : xc7a100t-3-csg324
+Target Device                      : xc6slx16-3-csg324
 
 ---- Source Options
 Top Module Name                    : button
@@ -73,7 +73,7 @@ LUT Combining                      : Auto
 Reduce Control Sets                : Auto
 Add IO Buffers                     : YES
 Global Maximum Fanout              : 100000
-Add Generic Clock Buffer(BUFG)     : 32
+Add Generic Clock Buffer(BUFG)     : 16
 Register Duplication               : YES
 Optimize Instantiated Primitives   : NO
 Use Clock Enable                   : Auto
@@ -108,9 +108,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/yuan/Desktop/fgpa/button/freq_divider.v" into library work
+Analyzing Verilog file "/home/yuan/Desktop/FPGA/button/freq_divider.v" into library work
 Parsing module <freq_divider>.
-Analyzing Verilog file "/home/yuan/Desktop/fgpa/button/button.v" into library work
+Analyzing Verilog file "/home/yuan/Desktop/FPGA/button/button.v" into library work
 Parsing module <button>.
 
 =========================================================================
@@ -126,14 +126,14 @@ Elaborating module <freq_divider>.
 =========================================================================
 
 Synthesizing Unit <button>.
-    Related source file is "/home/yuan/Desktop/fgpa/button/button.v".
+    Related source file is "/home/yuan/Desktop/FPGA/button/button.v".
     Found 4-bit register for signal <led_reg>.
     Summary:
 	inferred   4 D-type flip-flop(s).
 Unit <button> synthesized.
 
 Synthesizing Unit <freq_divider>.
-    Related source file is "/home/yuan/Desktop/fgpa/button/freq_divider.v".
+    Related source file is "/home/yuan/Desktop/FPGA/button/freq_divider.v".
         N = 1350000
     Found 26-bit register for signal <count>.
     Found 1-bit register for signal <clk_out>.
@@ -230,7 +230,7 @@ Top Level Output File Name         : button.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 107
+# BELS                             : 108
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 20
@@ -238,7 +238,7 @@ Primitive and Black Box Usage:
 #      LUT3                        : 2
 #      LUT4                        : 2
 #      LUT5                        : 7
-#      LUT6                        : 4
+#      LUT6                        : 5
 #      MUXCY                       : 26
 #      VCC                         : 1
 #      XORCY                       : 21
@@ -254,28 +254,28 @@ Primitive and Black Box Usage:
 Device utilization summary:
 ---------------------------
 
-Selected Device : 7a100tcsg324-3 
+Selected Device : 6slx16csg324-3 
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              24  out of  126800     0%  
- Number of Slice LUTs:                   58  out of  63400     0%  
-    Number used as Logic:                58  out of  63400     0%  
+ Number of Slice Registers:              24  out of  18224     0%  
+ Number of Slice LUTs:                   59  out of   9112     0%  
+    Number used as Logic:                59  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     59
-   Number with an unused Flip Flop:      35  out of     59    59%  
-   Number with an unused LUT:             1  out of     59     1%  
-   Number of fully used LUT-FF pairs:    23  out of     59    38%  
+ Number of LUT Flip Flop pairs used:     60
+   Number with an unused Flip Flop:      36  out of     60    60%  
+   Number with an unused LUT:             1  out of     60     1%  
+   Number of fully used LUT-FF pairs:    23  out of     60    38%  
    Number of unique control sets:         2
 
 IO Utilization: 
  Number of IOs:                          10
- Number of bonded IOBs:                  10  out of    210     4%  
+ Number of bonded IOBs:                  10  out of    232     4%  
     IOB Flip Flops/Latches:               2
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -309,9 +309,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 2.356ns (Maximum Frequency: 424.484MHz)
-   Minimum input arrival time before clock: 0.803ns
-   Maximum output required time after clock: 0.640ns
+   Minimum period: 3.872ns (Maximum Frequency: 258.278MHz)
+   Minimum input arrival time before clock: 2.785ns
+   Maximum output required time after clock: 3.597ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -320,71 +320,52 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 2.356ns (frequency: 424.484MHz)
+  Clock period: 3.872ns (frequency: 258.278MHz)
   Total number of paths / destination ports: 707 / 24
 -------------------------------------------------------------------------
-Delay:               2.356ns (Levels of Logic = 21)
-  Source:            clk_1hz/count_0 (FF)
-  Destination:       clk_1hz/count_18 (FF)
+Delay:               3.872ns (Levels of Logic = 3)
+  Source:            clk_1hz/count_1 (FF)
+  Destination:       clk_1hz/count_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: clk_1hz/count_0 to clk_1hz/count_18
+  Data Path: clk_1hz/count_1 to clk_1hz/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.361   0.283  clk_1hz/count_0 (clk_1hz/count_0)
-     INV:I->O              1   0.113   0.000  clk_1hz/Mcount_count_lut<0>_INV_0 (clk_1hz/Mcount_count_lut<0>)
-     MUXCY:S->O            1   0.353   0.000  clk_1hz/Mcount_count_cy<0> (clk_1hz/Mcount_count_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<1> (clk_1hz/Mcount_count_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<2> (clk_1hz/Mcount_count_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<3> (clk_1hz/Mcount_count_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<4> (clk_1hz/Mcount_count_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<5> (clk_1hz/Mcount_count_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<6> (clk_1hz/Mcount_count_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<7> (clk_1hz/Mcount_count_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<8> (clk_1hz/Mcount_count_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<9> (clk_1hz/Mcount_count_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<10> (clk_1hz/Mcount_count_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<11> (clk_1hz/Mcount_count_cy<11>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<12> (clk_1hz/Mcount_count_cy<12>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<13> (clk_1hz/Mcount_count_cy<13>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<14> (clk_1hz/Mcount_count_cy<14>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<15> (clk_1hz/Mcount_count_cy<15>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<16> (clk_1hz/Mcount_count_cy<16>)
-     MUXCY:CI->O           1   0.023   0.000  clk_1hz/Mcount_count_cy<17> (clk_1hz/Mcount_count_cy<17>)
-     XORCY:CI->O           1   0.370   0.379  clk_1hz/Mcount_count_xor<18> (Result<18>)
-     LUT2:I0->O            1   0.097   0.000  clk_1hz/Mcount_count_eqn_181 (clk_1hz/Mcount_count_eqn_18)
-     FDC:D                     0.008          clk_1hz/count_18
+     FDC:C->Q              2   0.447   0.981  clk_1hz/count_1 (clk_1hz/count_1)
+     LUT6:I0->O            2   0.203   0.845  clk_1hz/GND_2_o_GND_2_o_equal_1_o<25>2 (clk_1hz/GND_2_o_GND_2_o_equal_1_o<25>1)
+     LUT6:I3->O           11   0.205   0.883  clk_1hz/GND_2_o_GND_2_o_equal_1_o<25>4 (clk_1hz/GND_2_o_GND_2_o_equal_1_o)
+     LUT2:I1->O            1   0.205   0.000  clk_1hz/Mcount_count_eqn_01 (clk_1hz/Mcount_count_eqn_0)
+     FDC:D                     0.102          clk_1hz/count_0
     ----------------------------------------
-    Total                      2.356ns (1.693ns logic, 0.663ns route)
-                                       (71.9% logic, 28.1% route)
+    Total                      3.872ns (1.162ns logic, 2.710ns route)
+                                       (30.0% logic, 70.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
   Total number of paths / destination ports: 38 / 26
 -------------------------------------------------------------------------
-Offset:              0.803ns (Levels of Logic = 2)
-  Source:            BUTTON1 (PAD)
-  Destination:       led_reg_0 (FF)
+Offset:              2.785ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       clk_1hz/clk_out (FF)
   Destination Clock: clk rising
 
-  Data Path: BUTTON1 to led_reg_0
+  Data Path: reset to clk_1hz/clk_out
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.001   0.697  BUTTON1_IBUF (BUTTON1_IBUF)
-     LUT5:I0->O            1   0.097   0.000  BUTTON3_GND_1_o_select_8_OUT<1>1 (BUTTON3_GND_1_o_select_8_OUT<3>)
-     FD:D                      0.008          led_reg_3
+     IBUF:I->O            22   1.222   1.133  reset_IBUF (reset_IBUF)
+     FDC:CLR                   0.430          clk_1hz/clk_out
     ----------------------------------------
-    Total                      0.803ns (0.106ns logic, 0.697ns route)
-                                       (13.2% logic, 86.8% route)
+    Total                      2.785ns (1.652ns logic, 1.133ns route)
+                                       (59.3% logic, 40.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              0.640ns (Levels of Logic = 1)
+Offset:              3.597ns (Levels of Logic = 1)
   Source:            led_reg_0 (FF)
   Destination:       LED0 (PAD)
   Source Clock:      clk rising
@@ -393,11 +374,11 @@ Offset:              0.640ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.361   0.279  led_reg_0 (led_reg_0)
-     OBUF:I->O                 0.000          LED0_OBUF (LED0)
+     FD:C->Q               1   0.447   0.579  led_reg_0 (led_reg_0)
+     OBUF:I->O                 2.571          LED0_OBUF (LED0)
     ----------------------------------------
-    Total                      0.640ns (0.361ns logic, 0.279ns route)
-                                       (56.4% logic, 43.6% route)
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
 
 =========================================================================
 
@@ -409,19 +390,19 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    2.356|         |         |         |
+clk            |    3.872|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 5.41 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 2.74 secs
  
 --> 
 
 
-Total memory usage is 494124 kilobytes
+Total memory usage is 378456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    5 (   0 filtered)

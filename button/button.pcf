@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 06 11:23:40 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "LED0" LOCATE = SITE "E13" LEVEL 1;
+COMP "LED1" LOCATE = SITE "C14" LEVEL 1;
+COMP "LED2" LOCATE = SITE "C4" LEVEL 1;
+COMP "LED3" LOCATE = SITE "A4" LEVEL 1;
+COMP "reset" LOCATE = SITE "D14" LEVEL 1;
+COMP "BUTTON0" LOCATE = SITE "P4" LEVEL 1;
+COMP "BUTTON1" LOCATE = SITE "F6" LEVEL 1;
+COMP "BUTTON2" LOCATE = SITE "E4" LEVEL 1;
+COMP "BUTTON3" LOCATE = SITE "F5" LEVEL 1;
+SCHEMATIC END;
+
