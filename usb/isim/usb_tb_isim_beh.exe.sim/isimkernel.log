@@ -1,0 +1,30 @@
+Command line:
+   usb_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52243
+
+Mon May 13 21:49:45 2024
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 186.233 Meg
+
+ Total Signals          : 22
+ Total Nets             : 28
+ Total Signal Drivers   : 11
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 21
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 196
+Total Line Count : 118
+Total Line Count : 118
+
+ Total Simulation Time: 0.08 sec
+
+ Current Memory Usage: 261.734 Meg
+
+Mon May 13 21:51:31 2024
+
