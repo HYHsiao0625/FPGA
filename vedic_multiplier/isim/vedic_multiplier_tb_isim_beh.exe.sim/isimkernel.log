@@ -1,0 +1,30 @@
+Command line:
+   vedic_multiplier_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55143
+
+Mon May 20 11:15:57 2024
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 186.229 Meg
+
+ Total Signals          : 17
+ Total Nets             : 21
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 17
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 105
+Total Line Count : 26
+Total Line Count : 26
+
+ Total Simulation Time: 0.05 sec
+
+ Current Memory Usage: 261.73 Meg
+
+Mon May 20 11:16:21 2024
+
