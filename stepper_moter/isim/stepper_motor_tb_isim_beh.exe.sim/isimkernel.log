@@ -1,0 +1,29 @@
+Command line:
+   stepper_motor_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  33167
+
+Mon May 27 10:52:49 2024
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 186.225 Meg
+
+ Total Signals          : 21
+ Total Nets             : 19
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 165
+Total Line Count : 65
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 261.726 Meg
+
+Mon May 27 10:53:03 2024
+

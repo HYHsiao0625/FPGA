@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/yuan/Desktop/FPGA/stepper_moter/stepper_motor_tb_isim_beh.exe" -prj "/home/yuan/Desktop/FPGA/stepper_moter/stepper_motor_tb_beh.prj" "work.stepper_motor_tb" "work.glbl" 

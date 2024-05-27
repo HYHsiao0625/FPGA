@@ -1,0 +1,4 @@
+verilog work "freq_divider.v"
+verilog work "stpper_motor.v"
+verilog work "stepper_motor_tb.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
